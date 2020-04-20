@@ -1,9 +1,24 @@
-body, p, button {
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
     font-family: 'Playfair Display', serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     color: #626262;
+}
+
+.page-header {
+    padding-top: 76px;
+    padding-bottom: 100px;
 }
 
 .wrapper {
@@ -15,11 +30,17 @@ body, p, button {
     text-align: center;
 }
 
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
 .navigation li {
     display: inline-block;
-    margin-top: 75px;
+    /*  margin-top: 75px; */
     margin-right: 100px;
-    margin-bottom: 100px;
+    /*  margin-bottom: 100px; */
 }
 
 .navigation li:last-child {
@@ -27,8 +48,10 @@ body, p, button {
 }
 
 .navigation li a {
+    display: block;
     text-transform: uppercase;
     text-decoration: none;
+    font-size: 14px;
     color: #626262;
 }
 
@@ -45,34 +68,38 @@ body, p, button {
     width: 420px;
     font-size: 14px;
     margin-right: 60px;
-    margin-bottom: 130px;
 }
 
 .post:nth-child(even) {
     margin-right: 0;
 }
 
-.post:nth-last-child(-n+2) {
-    margin-bottom: 55px;
-}
-
-.post img {
+.post-img {
     display: block;
     width: 100%;
     height: auto;
+    margin-bottom: 28px;
 }
+
+
 
 .post .category {
     font: 300 14px 'Ubuntu', sans-serif;
     text-transform: uppercase;
     color: #b4ad9e;
-    margin-top: 26px;
-    margin-bottom: 30px;
+    margin: 0;
+    margin-bottom: 33px;
 }
 
 .post h3 {
     font-size: 30px;
-    margin-bottom: 35px;
+    margin: 0;
+    margin-bottom: 36px;
+}
+
+.post-description {
+    margin: 0;
+    margin-bottom: 130px;
 }
 
 .btn-more {
@@ -81,5 +108,12 @@ body, p, button {
     font-size: 20px;
     border: 1px solid;
     padding: 20px 35px;
-    margin-bottom: 75px;
+}
+
+.btn-more:hover {
+    color: #03a9f4
+}
+
+.load-more-button {
+    padding-bottom: 70px;
 }
