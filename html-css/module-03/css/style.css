@@ -68,6 +68,7 @@ body {
     width: 420px;
     font-size: 14px;
     margin-right: 60px;
+    margin-bottom: 130px;
 }
 
 .post:nth-child(even) {
@@ -99,7 +100,6 @@ body {
 
 .post-description {
     margin: 0;
-    margin-bottom: 130px;
 }
 
 .btn-more {
@@ -108,12 +108,9 @@ body {
     font-size: 20px;
     border: 1px solid;
     padding: 20px 35px;
+    margin-bottom: 70px;
 }
 
 .btn-more:hover {
     color: #03a9f4
-}
-
-.load-more-button {
-    padding-bottom: 70px;
 }
