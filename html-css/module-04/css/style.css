@@ -35,9 +35,15 @@ img {
     clear: both;
 }
 
+/*NAVIGATION*/
+
+.header {
+    padding: 36px 0;
+    margin-bottom: 66px;
+}
+
 .logo {
     display: inline-block;
-    /*пришлось применить inline-block для того чтобы применились стили для первой буквы через псевдо элемент. почему так?*/
     font-family: 'Roboto', 'Arial', sans-serif;
     color: #555252;
     font-weight: 300;
@@ -50,6 +56,221 @@ img {
 .logo:first-letter {
     font-weight: 900;
     color: #1abc9c;
+}
+
+.nav-list {
+    float: right;
+    width: 466px;
+    margin: 0;
+    margin: 2px;
+    padding: 0;
+    font-size: 14px;
+    list-style: none;
+}
+
+.nav-list-item {
+    float: left;
+}
+
+.nav-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.nav-list-item-link {
+    color: #0f0101;
+    font-weight: 700;
+    line-height: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-list-item-link:hover,
+.nav-list-item-link:focus {
+    color: #1abc9c;
+}
+
+/*FEATURED PRODUCTS*/
+
+.section {
+    padding-bottom: 100px;
+}
+
+.section-title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 92px;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    background-color: #1abc9c;
+    width: 164px;
+    height: 8px;
+    margin: 28px auto 0px;
+}
+
+.featured-products {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.product-image {
+    display: block;
+    height: 282px;
+}
+
+.featured-products-item {
+    float: left;
+    width: 255px;
+    background-color: #e9f0fd;
+}
+
+.featured-products-item:hover,
+.featured-products-item:focus {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.featured-products-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.featured-products-item:nth-child(-n+4) {
+    margin-bottom: 30px;
+}
+
+.product-name-container {
+    background-color: #323232;
+    width: 255px;
+    height: 40px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.item-title {
+    float: left;
+    margin: 0;
+    padding: 0;
+    padding-left: 14px;
+    height: 40px;
+    padding-top: 5px;
+}
+
+.product-name-link {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.product-image-link {
+    display: block;
+}
+
+.featured-products-item:hover .product-name-container,
+.featured-products-item:focus .product-name-container {
+    background-color: #1abc9c;
+}
+
+span {
+    float: right;
+    width: 54px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.44);
+    padding-top: 5px;
+    text-align: center;
+}
+
+/*LATEST NEWS*/
+
+.latest-news {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.latest-news-item {
+    float: left;
+    width: 350px;
+}
+
+.latest-news-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.news-image {
+    display: block;
+    margin-bottom: 10px;
+    height: 262px;
+    filter: opacity(0.8);
+}
+
+.latest-news-item:hover .news-image,
+.latest-news-item:focus .news-image {
+    filter: opacity(1);
+}
+
+.news-title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 26px;
+    letter-spacing: -0.02em;
+}
+
+.news-title::after {
+    content: '';
+    display: block;
+    width: 136px;
+    height: 4px;
+    background-color: #1abc9c;
+    margin-top: 10px;
+}
+
+.news-description {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+}
+
+.button {
+    border: none;
+    border-radius: 3px;
+    padding: 18px 44px;
+    background-color: #4ec6ab;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 /* visually-hidden helper */
