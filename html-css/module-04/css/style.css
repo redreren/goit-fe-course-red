@@ -5,12 +5,23 @@ html {
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
     box-sizing: inherit;
 }
 
-body {}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    color: #555252;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
 
 img {
     display: block;
@@ -22,6 +33,23 @@ img {
     display: table;
     content: '';
     clear: both;
+}
+
+.logo {
+    display: inline-block;
+    /*пришлось применить inline-block для того чтобы применились стили для первой буквы через псевдо элемент. почему так?*/
+    font-family: 'Roboto', 'Arial', sans-serif;
+    color: #555252;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.logo:first-letter {
+    font-weight: 900;
+    color: #1abc9c;
 }
 
 /* visually-hidden helper */
